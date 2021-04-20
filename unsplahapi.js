@@ -20,9 +20,10 @@ class UnsplashApi{
         try {
             const photoResponse = await this.axiosObject.get('/photos/random')
             console.log(photoResponse.data[0].urls.regular)
-            //return photoResponse.data[0].urls.regular;
+            return photoResponse.data[0].urls.regular;
         } catch (err) {
             console.log(err)
+            
         }
     }
 }
